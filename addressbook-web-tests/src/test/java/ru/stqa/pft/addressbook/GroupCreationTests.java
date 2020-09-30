@@ -25,7 +25,7 @@ public class GroupCreationTests {
 
   @Test
   public void testAddressbook() throws Exception {
-    driver.get("http://addressbook/group.php");
+    driver.get("http://addressbook:8888/group.php");
     driver.findElement(By.name("user")).click();
     driver.findElement(By.name("pass")).clear();
     driver.findElement(By.name("pass")).sendKeys("secret");
